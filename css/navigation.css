@@ -98,12 +98,12 @@ li a.active {
 }
 /* line 98, ../sass/navigation.scss */
 #block-menu-menu-header-menu ul li a {
-  border-bottom: 2px solid #B29D6B;
+  border-bottom: 2px solid #b29d6b;
 }
 /* line 101, ../sass/navigation.scss */
 #block-menu-menu-header-menu ul li a:hover, #block-menu-menu-header-menu ul li a.active {
   color: #990000;
-  border-bottom: 4px solid #B29D6B;
+  border-bottom: 4px solid #b29d6b;
 }
 
 /* line 109, ../sass/navigation.scss */
