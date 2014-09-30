@@ -19,12 +19,12 @@ body {
   margin: 0;
   padding: 0;
   background: #FFF;
-  background: url('../images/bg.png?1400595200') repeat scroll 0 0 #222222;
+  background: url('../images/bg.png?1412098910') repeat scroll 0 0 #222222;
   font-family: 'ProximaNova';
   font-weight: normal;
   min-height: 100%;
-  border-left: 10px solid #E3E3E3;
-  border-right: 10px solid #E3E3E3;
+  border-left: 10px solid #e3e3e3;
+  border-right: 10px solid #e3e3e3;
 }
 
 /* line 32, ../sass/pages.scss */
@@ -61,15 +61,15 @@ body {
  */
 /* line 62, ../sass/pages.scss */
 .islandora-solr-search-result {
-  border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
   background: #f7f9f6;
   box-shadow: 0 3px 3px -3px #808184;
 }
 
 /* line 69, ../sass/pages.scss */
 .solr-fields dt, .solr-fields dd {
-  border-top: 1px solid #EEF0ED;
+  border-top: 1px solid #eef0ed;
 }
 
 /* line 72, ../sass/pages.scss */
@@ -226,7 +226,7 @@ h2.comment-form,
 h3.title {
   /* Comment title */
   margin: 0;
-  color: #3D1211 !important;
+  color: #3d1211 !important;
 }
 
 /* line 210, ../sass/pages.scss */
@@ -341,8 +341,8 @@ span.field-label {
 
 /* line 281, ../sass/pages.scss */
 ul.pager li.pager-current {
-  background: none repeat scroll 0 0 #CCCECF;
-  border: 1px solid #B29D6B;
+  background: none repeat scroll 0 0 #cccecf;
+  border: 1px solid #b29d6b;
   color: #5A5B5D;
 }
 
@@ -378,7 +378,7 @@ ul.pager li.pager-current {
 
 /* line 313, ../sass/pages.scss */
 #islandora-bookmark #islandora-bookmark-fedora-repository-object-form h3 {
-  color: #000 !important;
+  color: black !important;
 }
 
 /* line 319, ../sass/pages.scss */
@@ -389,7 +389,7 @@ ul.pager li.pager-current {
 #islandora-solr-top #secondary-display-profiles {
   margin-top: -2px;
   margin-right: 5px;
-  border-right: 1px solid #ccc;
+  border-right: 1px solid #cccccc;
   padding-right: 0.4em;
 }
 /* line 326, ../sass/pages.scss */
@@ -414,8 +414,8 @@ fieldset.islandora-metadata dt {
 /* line 344, ../sass/pages.scss */
 .ir_citationCModel img {
   background-color: #F2F2F2;
-  border: 1px solid #DDDDDD;
-  border-radius: 5px 5px 5px 5px;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
   padding: 15px;
 }
 

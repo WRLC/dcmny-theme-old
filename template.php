@@ -63,7 +63,7 @@
  *   metro_theme_. For example:
  *
  *     original, found in modules/field/field.module: theme_field()
- *     theme override, found in template.php: ir7_field()
+ *     theme override, found in template.php: metro_theme_field()
  *
  *   where metro_theme is the name of your sub-theme. For example, the
  *   zen_classic theme would define a zen_classic_field() function.

@@ -26,7 +26,7 @@
 /* line 24, ../sass/blocks.scss */
 .block h2.block-title {
   /* Block title */
-  border-bottom: 2px solid #3D1211;
+  border-bottom: 2px solid #3d1211;
 }
 
 /* line 29, ../sass/blocks.scss */
@@ -259,14 +259,14 @@
 #block-accordion-rotator-accordion-rotator h2 {
   font-size: 120%;
   padding: 0 15px;
-  font-family: 'News Cycle' !important;
+  font-family: "News Cycle" !important;
 }
 /* line 256, ../sass/blocks.scss */
 #block-accordion-rotator-accordion-rotator p {
   font-size: 80%;
   font-weight: normal;
   padding: 0 15px;
-  font-family: arial, helvetica, verdana, sans-serif  !important;
+  font-family: arial, helvetica, verdana, sans-serif !important;
   margin: 0;
 }
 

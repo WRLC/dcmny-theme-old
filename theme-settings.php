@@ -7,7 +7,7 @@
  * @param $form_state
  *   A keyed array containing the current state of the form.
  */
-function ir7_form_system_theme_settings_alter(&$form, &$form_state, $form_id = NULL)  {
+function metro_theme_form_system_theme_settings_alter(&$form, &$form_state, $form_id = NULL)  {
   // Work-around for a core bug affecting admin themes. See issue #943212.
   if (isset($form_id)) {
     return;
@@ -16,10 +16,10 @@ function ir7_form_system_theme_settings_alter(&$form, &$form_state, $form_id = N
   // Create the form using Forms API: http://api.drupal.org/api/7
 
   /* -- Delete this line if you want to use this setting
-  $form['ir7_example'] = array(
+  $form['metro_theme_example'] = array(
     '#type'          => 'checkbox',
-    '#title'         => t('ir7 sample setting'),
-    '#default_value' => theme_get_setting('ir7_example'),
+    '#title'         => t('metro_theme sample setting'),
+    '#default_value' => theme_get_setting('metro_theme_example'),
     '#description'   => t("This option doesn't do anything; it's just an example."),
   );
   // */
