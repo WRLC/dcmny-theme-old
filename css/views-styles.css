@@ -1,0 +1,85 @@
+/**
+ * @file
+ * Views Styling
+ */
+/*
+ * Views' admin tabs
+ *
+ * The views admin tabs use the same classes as the secondary tabs. We prevent
+ * some of our tab styling from bleeding into (and breaking) the Views admin
+ * pages. If your sub-theme isn't used for admin pages, you can remove this
+ * entire section.
+ */
+/* line 19, ../sass/views-styles.scss */
+.views-displays .secondary li {
+  float: none;
+  margin: 0 6px 0;
+}
+/* line 25, ../sass/views-styles.scss */
+.views-displays .secondary a:link,
+.views-displays .secondary a:visited {
+  text-shadow: none;
+  padding: 2px 7px 3px;
+}
+/* line 30, ../sass/views-styles.scss */
+.views-displays .secondary .open > a {
+  -webkit-border-radius: 7px 7px 0 0;
+  -moz-border-radius: 7px 7px 0 0;
+  -ms-border-radius: 7px 7px 0 0;
+  -o-border-radius: 7px 7px 0 0;
+  border-radius: 7px 7px 0 0;
+}
+/* line 32, ../sass/views-styles.scss */
+.views-displays .secondary .open > a:hover {
+  color: #333;
+}
+/* line 37, ../sass/views-styles.scss */
+.views-displays .secondary .action-list li {
+  margin: 0;
+}
+/* line 39, ../sass/views-styles.scss */
+.views-displays .secondary .action-list li:first-child {
+  -webkit-border-radius: 0 7px 0 0;
+  -moz-border-radius: 0 7px 0 0;
+  -ms-border-radius: 0 7px 0 0;
+  -o-border-radius: 0 7px 0 0;
+  border-radius: 0 7px 0 0;
+}
+/* line 42, ../sass/views-styles.scss */
+.views-displays .secondary .action-list li:last-child {
+  -webkit-border-radius: 0 0 7px 7px;
+  -moz-border-radius: 0 0 7px 7px;
+  -ms-border-radius: 0 0 7px 7px;
+  -o-border-radius: 0 0 7px 7px;
+  border-radius: 0 0 7px 7px;
+}
+
+/* line 50, ../sass/views-styles.scss */
+.slideshow {
+  margin-bottom: 2.5em;
+}
+/* line 52, ../sass/views-styles.scss */
+.slideshow .galleria-container {
+  background: #E3E3E3;
+  max-width: 100%;
+}
+/* line 56, ../sass/views-styles.scss */
+.slideshow .galleria-info {
+  left: 10px;
+  bottom: 60px;
+  top: inherit;
+}
+/* line 60, ../sass/views-styles.scss */
+.slideshow .galleria-info .galleria-info-text {
+  display: block;
+  opacity: 0.8;
+}
+/* line 64, ../sass/views-styles.scss */
+.slideshow .galleria-info .galleria-info-link {
+  display: none;
+  top: -20px;
+}
+/* line 68, ../sass/views-styles.scss */
+.slideshow .galleria-info .galleria-info-close {
+  display: block;
+}
