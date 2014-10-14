@@ -39,6 +39,16 @@
  *
 **/
 
+#block-islandora-solr-simple {
+  float: left;
+  clear: both;
+}
+
+.user-login {
+  float: right;
+  clear: right;
+}
+
 .image-block-front, .submit-collection-anon, .submit-collection, .welcome {
   background: #E3E3E3;
   float: right;
@@ -159,18 +169,18 @@
   }
 }
 
-.view-frontpage-solr-boxes {
-  .views-row {
-    margin: 0.75em 0;    
-    line-height: 1.25em;
-  } 
-}
-
-
 /**
  * @Views Blocks
  *
 **/
+
+.views-responsive-grid {
+  .views-column {
+    float: left;
+    width: 50%;
+  }
+}
+
 
 #block-aggregator-category-1 { /* Block for the latest news items in the first category */
 }
@@ -198,9 +208,7 @@
 /* @Google Analytics Views */
 
 #block-views-object-visitors-by-month-block {
-  float: left;
   padding: 15px;
-  margin: 0 10px 0 0;
   background: #E3E3E3;
   min-height: 520px;
   box-shadow: 0 0 2px 1px rgba(38, 37, 38, 0.3);

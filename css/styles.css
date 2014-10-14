@@ -31,14 +31,14 @@
 #header,
 #main-menu,
 #aside2 {
-  border: 1px solid #cccccc;
+  border: 1px solid #ccc;
 }
 
 /* line 43, ../sass/common.scss */
 #content,
 #aside1,
 #footer {
-  border: 1px solid #0099ff;
+  border: 1px solid #09f;
 }
 
 /* line 49, ../sass/common.scss */

@@ -19,7 +19,7 @@ html {
 
 body {
   margin: 0;
-  padding: 0;
+  padding: 0; 
   background: #FFF;
   background: image-url('bg.png') repeat scroll 0 0 #222222;
   font-weight: normal;
@@ -94,22 +94,20 @@ dl.solr-thumb {
 
 #logo { /* Wrapping link for logo */
   float: left; /* LTR */
-  margin: 1.75em 0 0;
+  margin: 1.25em 0 1em;
   padding: 0;
 }
 
 #name-and-slogan { /* Wrapper for website name and slogan */
   float: left;
-  margin-left: 2%;
-  margin-top: -0.2em;
+  padding: 2.75em 0.5em;
 }
 
 #site-name { /* The name of the website */
   margin: 0;
-  font-size: 1.5em;
-  line-height: 1.5em;
-  font-weight: normal;
-  color: #5A5B5D;
+  font-size: 200%;
+  text-transform: uppercase;
+  color: #00476C;
   a:link,
   a:visited {
     color: #5A5B5D;
@@ -124,14 +122,12 @@ dl.solr-thumb {
 
 #site-slogan { /* The slogan (or tagline) of a website */
   margin: 0;
-  font-size: 1em;
-  color: #A14243;
+  font-size: 100%;
+  color: #8B8D90;
   font-weight: normal;
 }
 
 .region-header { /* Wrapper for any blocks placed in the header region */
-  float: right;
-  margin: 1.2em 0.75em 0 0;
 }
 
 /*
