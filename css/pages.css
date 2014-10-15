@@ -221,7 +221,7 @@ h2.comment-form,
 h3.title {
   /* Comment title */
   margin: 0;
-  color: #3D1211 !important;
+  color: #424143 !important;
 }
 
 /* line 205, ../sass/pages.scss */
@@ -438,7 +438,7 @@ fieldset.islandora-metadata dt {
 #footer {
   padding-top: 1em;
   margin-top: 1em;
-  border-top: 1px solid #990000;
+  border-top: 1px solid #00476c;
 }
 
 /* line 377, ../sass/pages.scss */

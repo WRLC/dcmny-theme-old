@@ -22,12 +22,12 @@
   }
 
   h2.block-title { /* Block title */
-    border-bottom: 2px solid #3D1211;
+    border-bottom: 2px solid #424143;
   }
 }
 
 .front h2.block-title {
-    border-bottom: 1px solid #990000;
+    border-bottom: 1px solid #00476c;
     font-size: 125%;
     font-weight: normal;
     padding: 0.5em 0 0.9em;
@@ -190,7 +190,7 @@
 
 .submit-collection, .submit-collection-anon { /* First block created with "Add block" link */
   height: 70px !important;
-  background: #990000 !important;
+  background: #00476c !important;
   font-size: 130%;
   font-weight: normal;
   line-height: 3.2em;
