@@ -237,10 +237,3 @@ function metro_theme_preprocess_html(&$variables) {
   drupal_add_css('http://openfontlibrary.org/face/open-baskerville', array('group' => CSS_THEME, 'preprocess' => FALSE));
   drupal_add_css('http://openfontlibrary.org/face/news-cycle', array('group' => CSS_THEME, 'preprocess' => FALSE));
 }
-
-/**
- * Implements hook_block_view_MODULE_DELTA_alter().
- */
-function metro_theme_block_view_islandora_solr_simple_alter(&$data, $block) {
-  drupal_add_js(drupal_get_path('theme', 'metro-theme') . '/js/clean_simple_search.js');
-}
