@@ -8,6 +8,7 @@
  */
 ?>
 
+<?php print t('In asdfadsfasfadsfasdfadsfadsfa'); ?>
 <div class="islandora-basic-image-object islandora" vocab="http://schema.org/" prefix="dcterms: http://purl.org/dc/terms/" typeof="ImageObject">
   <div class="islandora-basic-image-content-wrapper clearfix">
     <?php if (isset($islandora_content)): ?>

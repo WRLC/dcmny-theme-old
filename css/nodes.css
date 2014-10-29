@@ -55,6 +55,11 @@
   /* A node displayed as teaser */
 }
 
+.about-collection-return-link {
+  float: left;
+}
+
+
 /*
  * All nodes are given a node-FOO class that describes the type of content that
  * it is. If you create a new content type called "my-custom-type", it will
@@ -89,4 +94,27 @@
   text-transform: uppercase;
   text-align: center;
   word-wrap: break-word;
+}
+
+.field-name-field-collection-image{
+  width: 48%;
+  float: left;
+}
+
+.field-name-field-collection-logo{
+  width: 48%;
+  float: left;
+}
+
+.field-name-field-collection-logo div.field-items div.field-item >img{
+  float: right;
+  margin-top: -1.5em;
+}
+
+.field-name-body {
+  float: left;
+}
+
+.field-name-field-view-collection-link {
+  float: left;
 }
