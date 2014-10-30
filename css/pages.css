@@ -27,6 +27,11 @@ body {
 }
 
 /* line 31, ../sass/pages.scss */
+.about-collection {
+  margin-left: 3em;
+}
+
+/* line 31, ../sass/pages.scss */
 #page {
   background: #FFF;
 }
@@ -35,6 +40,7 @@ body {
 #page-title {
   background: none !important;
   font-weight: normal;
+  padding-bottom: 1em;
 }
 
 /*
