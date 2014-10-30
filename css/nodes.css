@@ -115,8 +115,10 @@
 
 .field-name-body {
   float: left;
+  width: 100%;
 }
 
 .field-name-field-view-collection-link {
   float: left;
+  width: 100%;
 }
