@@ -70,7 +70,7 @@
     width: 100%;
   }
 }
-@media all and (min-width: 480px) and (max-width: 959px) {
+@media all and (min-width: 0px) and (max-width: 768px) {
   /*
    * Use 3 grid columns for smaller screens.
    */
@@ -81,19 +81,32 @@
   .sidebar-first #content {
     /* Span 2 columns, starting in 2nd column from left. */
     float: left;
-    width: 66.66667%;
-    margin-left: 33.33333%;
-    margin-right: -100%;
+    width: 100%;
   }
   /* line 107, ../../sass/layouts/responsive-sidebars.scss */
   .sidebar-first .region-sidebar-first {
     /* Span 1 column, starting in 1st column from left. */
     float: left;
     width: 33.33333%;
-    margin-left: 0%;
+    margin-left: 0% !important;
     margin-right: -33.33333%;
   }
-
+  .sidebar{
+    display:none;
+  }
+  .sidebar-first #content {
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: auto;
+  }
+  .islandora-object-description-thumbnail {
+    float: none !important;
+    text-align: center !important;
+  }
+  .islandora-metadata {
+    float: left !important;
+  }
   /*
    * The layout when there is only one sidebar, the right one.
    */
@@ -103,18 +116,13 @@
     float: left;
     width: 66.66667%;
     margin-left: 0%;
-    margin-right: -66.66667%;
-    width: 73.333% !important;
+    margin-right: none;
+    width: 100% !important;
   }
   /* line 122, ../../sass/layouts/responsive-sidebars.scss */
   .sidebar-second .region-sidebar-second {
     /* Span 1 column, starting in 3rd column from left. */
     float: left;
-    width: 33.33333%;
-    margin-left: 66.66667%;
-    margin-right: -100%;
-    width: 25% !important;
-    margin-left: 68.28% !important;
   }
 
   /*
@@ -262,16 +270,23 @@
   }
 }
 @media all and (min-width: 320px) and (max-width: 639px) {
-  /* line 249, ../../sass/layouts/responsive-sidebars.scss */
-  #block-views-frontpage-solr-boxes-block-1 {
-    margin-bottom: 1em !important;
+  #edit-simple {
+    text-align: center;
   }
 
+  #block-islandora-collection-search-islandora-collection-search h2{
+    margin-left: auto;
+  }
+
+  #islandora-collection-search-form {
+    margin-top: 10px;
+  }
+}
+
+@media all and (min-width: 320px) and (max-width: 639px) {
   /* line 252, ../../sass/layouts/responsive-sidebars.scss */
   .region-header {
     width: 100%;
-    float: left !important;
-    margin: 0 !important;
   }
   /* line 256, ../../sass/layouts/responsive-sidebars.scss */
   .region-header #block-menu-menu-header-menu {
@@ -279,14 +294,8 @@
   }
   /* line 259, ../../sass/layouts/responsive-sidebars.scss */
   .region-header #block-menu-menu-header-menu {
-    float: none !important;
     height: 4.5em;
     margin-top: 0;
-  }
-
-  /* line 265, ../../sass/layouts/responsive-sidebars.scss */
-  #logo {
-    margin-left: -0.5em !important;
   }
 
   /* line 268, ../../sass/layouts/responsive-sidebars.scss */
@@ -299,3 +308,4 @@
     width: 94% !important;
   }
 }
+

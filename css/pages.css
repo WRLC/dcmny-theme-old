@@ -6,14 +6,215 @@
  * miscellaneous Drupal elements that appear in the $content variable, such as
  * ul.links, .pager, .more-link, etc.
  */
-/*
- * Body
- */
+
+#islandora-bookmark ul{
+  margin-left: 1.5em;
+}
+
+#islandora-bookmark-detailed-form > div .list-links {
+  display: none;
+}
+
+#islandora-compound-sequence-position, #islandora-compound-previous-link, #islandora-compound-next-link {
+  margin-bottom: 0 !important;
+  height: 2.05em;
+}
+
+.islandora-object-description-thumbnail
+{
+  margin-top: 1em;
+  float:right;
+}
+
+.jwplayer{
+   max-width: 100%;
+ }
+.form-item.form-type-select.form-item-collections {
+  max-width: 100%;
+}
+.form-item-collections > select {
+  max-width: 100%;
+}
+/*  Textfield corrections */
+#edit-islandora-simple-search-query {
+  text-transform: none;
+}
+ 
+.item-list > ul {
+  padding-left: 0;
+}
+
+#content > article{
+  overflow: hidden;
+}
+
+.islandora-inline-metadata > dl {
+  width:100%;
+  overflow:hidden;
+
+}
+
+.galleria-info{
+  max-height: 30px;
+  overflow:hidden;
+}
+
+.views-column {
+  min-height: 10em;
+}
+
+.views-responsive-grid .views-row {
+  float: left;
+}
+
+.featured-thumb {
+  max-height: 5em;
+  max-width: 5em;
+  min-height: 5em;
+  min-width: 5em;
+}
+
+#name-and-slogan{
+  display: none;
+}
+
+#logo{
+  max-width: 600px;
+  height: auto;
+}
+
+#edit-collection-select{
+  white-space: nowrap !important;
+}
+
+.islandora-inline-metadata dd {
+  padding-left: 60px !important;
+}
+
+.sub-header-style{
+  background-color: #F2F2F2;
+  clear: left;
+  float: left;
+  height: auto;
+  left: 0;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  #footer .responsive-menus .responsive-menus-simple .rm-removed li:nth-child(3){
+    background-image: none !important;
+  }
+  #content{
+    overflow-y: auto !important;
+  }
+}
+
+#footer .footer-navigation .menu li:nth-child(3) a {
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: rgba(0, 0, 0, 0);
+  background-origin: padding-box;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: auto auto;
+  height: 80px;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  text-indent: -9999px;
+  width: 100%;
+}
+
+.browse-all-collections-item-wrapper {
+  border-bottom-color: #ddd;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  padding-bottom: 1.5em;
+}
+
+#header{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+#print_btn{
+  display:none;
+}
+
+ul li a.img{
+  display:none;
+}
+#block-menu-menu-login .menu{
+  margin-right: 1em;
+  line-height: 1.25em;
+  list-style: none outside none;
+  margin: 0.75em 0;
+  
+}
+.galleria-container{
+  margin: auto;
+}
+
+.browse-all-collections-item-wrapper a:link{
+  text-decoration:underline;
+}
+
+.browse-all-collections-item-wrapper{
+  float: left;
+  width: 100%;
+  height: 100%;
+  padding-top: 1.5em;
+  padding-bottom: 1.6em;
+}
+
+.browse-all-collections-image-wrapper{
+  max-width: 13%;
+  height:auto;
+  float: left;
+  width: 13%;
+}
+
+.browse-all-collections-content-wrapper{
+  width: 82%;
+  float: left;
+}
+
+.browse-all-collections-info-description{
+  height: 78%;
+}
+.browse-all-collections-info-wrapper{
+  height: 65%;
+  padding-left: 1.5em;
+}
+
+.browse-all-collections-links-wrapper{
+  padding-left: 1.5em;
+  padding-top: 1.5em;
+}
+
+.view-collections ul{
+  list-style-type: none;
+  float: left;
+  width: 100%;
+}
+
+.views-label{
+  font-weight: bold;
+}
+
+#browse-all-collections-info-wrapper-title-label{
+  font-weight: bold;
+}
+
 /* line 16, ../sass/pages.scss */
 html {
   height: 100%;
 }
 
+/*
+ * Body
+ */
 /* line 20, ../sass/pages.scss */
 body {
   margin: 0;
@@ -22,13 +223,6 @@ body {
   background: url('../images/bg.png?1413466539') repeat scroll 0 0 #222222;
   font-weight: normal;
   min-height: 100%;
-  border-left: 10px solid #E3E3E3;
-  border-right: 10px solid #E3E3E3;
-}
-
-/* line 31, ../sass/pages.scss */
-.about-collection {
-  margin-left: 3em;
 }
 
 /* line 31, ../sass/pages.scss */
@@ -60,7 +254,9 @@ body {
   background-color: #666;
   color: #fff;
 }
-
+.metro-sub-navigation-block>ul {
+  padding-left: 0px !important;
+}
 /*
  * Searching
  */
@@ -94,15 +290,11 @@ dl.solr-thumb {
 /*
  * Header
  */
-/* line 91, ../sass/pages.scss */
-.logged-in.not-front #header {
-  padding-top: 1.25em;
-}
 
 /* line 95, ../sass/pages.scss */
 #logo {
-  /* Wrapping link for logo */
   float: left;
+  max-width: 100%;
   /* LTR */
   margin: 1.25em 0 1em;
   padding: 0;
@@ -179,7 +371,7 @@ dl.solr-thumb {
   font-size: 70%;
   letter-spacing: 0.6pt;
   line-height: 1.5em;
-  padding-left: 9px;
+  padding-left: 20px;
 }
 /* line 164, ../sass/pages.scss */
 .breadcrumb ol {
@@ -367,6 +559,14 @@ ul.pager li.pager-current {
   float: right;
 }
 
+#clip > img {
+  padding-top: 15px;
+}
+
+.responsive-menus.responsified {
+  padding-bottom: 5px;
+}
+
 /* line 297, ../sass/pages.scss */
 .islandora-pdf-sidebar ul {
   padding: 0 1em;
@@ -390,12 +590,7 @@ ul.pager li.pager-current {
 #islandora-solr-top #secondary-display-profiles {
   margin-top: -2px;
   margin-right: 5px;
-  border-right: 1px solid #ccc;
   padding-right: 0.4em;
-}
-/* line 321, ../sass/pages.scss */
-#islandora-solr-top #secondary-display-profiles li.last img {
-  vertical-align: 2px;
 }
 
 /* line 327, ../sass/pages.scss */
@@ -459,3 +654,12 @@ fieldset.islandora-metadata dt {
 .region-bottom {
   /* Wrapper for any blocks placed in the page bottom region */
 }
+
+#navigation {
+background:#F2F2F2;
+}
+
+.overlay #page {
+padding: 0 0 0 0 !important;
+}
+

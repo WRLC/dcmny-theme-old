@@ -1,0 +1,24 @@
+
+/* featured collections/view specific styling*/
+.views-field.views-field-nothing {
+  float:left;
+  padding-right: 15px;
+  height: 5em;
+}
+
+.solr-featured-collections-view {
+  display: inline-block;
+}
+
+.featured-thumb {
+  max-height: 5em;
+  max-width: 5em;
+}
+
+.views-field.views-field-dctitle {
+  padding-bottom: 15px;
+}
+
+.views-field.views-field-dctitle {
+  padding-right: 10px;
+}

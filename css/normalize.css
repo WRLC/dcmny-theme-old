@@ -112,12 +112,12 @@ body {
 /* line 125, ../sass/normalize.scss */
 a:link {
   text-decoration: none;
-  color: #00476c;
+  color: rgb(4,120,212);
 }
 
 /* line 130, ../sass/normalize.scss */
 a:visited {
-  color: #00476c;
+  color: rgb(4,120,212);
 }
 
 /* line 135, ../sass/normalize.scss */
@@ -652,3 +652,4 @@ th {
 tbody {
   border-top: none;
 }
+

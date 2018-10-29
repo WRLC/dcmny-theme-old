@@ -158,9 +158,9 @@ li a.active {
 /* line 151, ../sass/navigation.scss */
 #footer .footer-navigation.top ul li:nth-child(3) a {
   text-indent: -9999px;
-  background: url(../images/wrlc/muislandora_logo_footer.png) no-repeat center center;
-  width: 32px;
-  height: 60px;
+  background: url(../images/DCPLlogo.png) no-repeat center center;
+  width: 120px;
+  height: 85px;
   padding: 0;
 }
 /* line 160, ../sass/navigation.scss */
@@ -213,3 +213,4 @@ li a.active {
  * Drupal core has limited ways in which it can display its menus. To get around
  * these limitations, see http://drupal.org/project/menu_block
  */
+
