@@ -236,15 +236,17 @@ function metro_theme_preprocess_block(&$variables, $hook) {
  *   An array of variables to pass to the theme template.
  */
 function metro_theme_preprocess_node(&$variables) {
-  // Handle additional processing for the 'about_collection' content type.
-  if (isset($variables['node']) && $variables['node']->type ==="about_collection") {
-    $variables['theme_hook_suggestions'][] =  "node__" . $variables['node']->type;
-    if (isset($variables['field_collection_pid']['und']['0']['value'])) {
-      $pid = $variables['field_collection_pid']['und']['0']['value'];
-      $variables['return_link'] = url("islandora/object/$pid");
-    }
-    if (isset($variables['field_institutions_website']['und']['0']['value'])) {
-      $variables['inst_link'] = $variables['field_institutions_website']['und']['0']['value'];
+  if (node_type_load('about_collection')) {
+    // Handle additional processing for the 'about_collection' content type.
+    if (isset($variables['node']) && $variables['node']->type ==="about_collection") {
+      $variables['theme_hook_suggestions'][] =  "node__" . $variables['node']->type;
+      if (isset($variables['field_collection_pid']['und']['0']['value'])) {
+        $pid = $variables['field_collection_pid']['und']['0']['value'];
+        $variables['return_link'] = url("islandora/object/$pid");
+      }
+      if (isset($variables['field_institutions_website']['und']['0']['value'])) {
+        $variables['inst_link'] = $variables['field_institutions_website']['und']['0']['value'];
+      }
     }
   }
 }
@@ -262,19 +264,21 @@ function metro_theme_preprocess_node(&$variables) {
  *   An array of variables to pass to the theme template.
  */
 function metro_theme_preprocess_page(&$variables) {
-  $object = menu_get_object('islandora_object', 2);
-  if (isset($object) && in_array("islandora:collectionCModel", $object->models)) {
-    $query = new EntityFieldQuery;
-    $query->entityCondition('entity_type', 'node')
-      ->entityCondition('bundle', 'about_collection')
-      ->propertyCondition('status', 1)
-      ->fieldCondition('field_collection_pid', 'value', $object->id);
-    $results = $query->execute();
-    if (isset($results['node'])) {
-      $nodes = node_load_multiple(array_keys($results['node']));
-      $node = reset($nodes);
-      $node_id = $node->nid;
-      $variables['about_collection_link'] = url("node/$node_id");
+  if (node_type_load('about_collection')) {
+    $object = menu_get_object('islandora_object', 2);
+    if (isset($object) && in_array("islandora:collectionCModel", $object->models)) {
+      $query = new EntityFieldQuery;
+      $query->entityCondition('entity_type', 'node')
+        ->entityCondition('bundle', 'about_collection')
+        ->propertyCondition('status', 1)
+        ->fieldCondition('field_collection_pid', 'value', $object->id);
+      $results = $query->execute();
+      if (isset($results['node'])) {
+        $nodes = node_load_multiple(array_keys($results['node']));
+        $node = reset($nodes);
+        $node_id = $node->nid;
+        $variables['about_collection_link'] = url("node/$node_id");
+      }
     }
   }
 }
